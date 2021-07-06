@@ -1,0 +1,55 @@
+export const btnRow1 = [
+  { text: "<>", input: "<>", value: 0, hide: true },
+  { text: "tan", input: "tan(", value: "Math.tan(", hide: true },
+  { text: "cot", input: "cot(", value: "1/Math.tan(", hide: true },
+  { text: "Rad", input: "Rad", value: 0, hide: true },
+  { text: "sqrt", input: "sqrt(", value: "Math.sqrt(", hide: true },
+  { text: "(", input: "(", value: "(", hide: false },
+  { text: ")", input: ")", value: ")", hide: false },
+  { text: "%", input: "%", value: "/100", hide: false },
+  { text: "/", input: "/", value: "/", hide: false },
+];
+export const btnRow2 = [
+  { text: "10^", input: "10x", value: "10**", hide: true },
+  { text: "cosec", input: "cosec(", value: "1/Math.sin(", hide: true },
+  { text: "sin", input: "sin(", value: "Math.sin(", hide: true },
+  { text: "cos", input: "cos(", value: "Math.cos(", hide: true },
+  { text: "tan", input: "tan(", value: "Math.tan(", hide: true },
+  { text: "7", input: "7", value: "7", hide: false },
+  { text: "8", input: "8", value: "8", hide: false },
+  { text: "9", input: "9", value: "9", hide: false },
+  { text: "x", input: "x", value: "*", hide: false },
+];
+export const btnRow3 = [
+  { text: "sin-1", input: "sin-1(", value: 0, hide: true },
+  { text: "sec", input: "sec", value: 0, hide: true },
+  { text: "In", input: "In(", value: 0, hide: true },
+  { text: "log", input: "log(", value: "Math.log10(", hide: true },
+  { text: "1/x", input: "1/x", value: 0, hide: true },
+  { text: "4", input: "4", value: "4", hide: false },
+  { text: "5", input: "5", value: "5", hide: false },
+  { text: "6", input: "6", value: "6", hide: false },
+  { text: "-", input: "-", value: "-", hide: false },
+];
+export const btnRow4 = [
+  { text: "cos-1", input: "cos-1", value: 0, hide: true },
+  { text: "tan-1", input: "tan-1", value: 0, hide: true },
+  { text: "|x|", input: "|x|", value: 0, hide: true },
+  { text: "x2", input: "sq", value: "**2", hide: true },
+  { text: "xy", input: "^", value: "**", hide: true },
+  { text: "1", input: "1", value: "1", hide: false },
+  { text: "2", input: "2", value: "2", hide: false },
+  { text: "3", input: "3", value: "3", hide: false },
+  { text: "4", input: "+", value: "+", hide: false },
+];
+export const btnRow5 = [
+  { text: "cot-1", input: "cot-1", value: 0, hide: true },
+  { text: "x4", input: "quad", value: "**4", hide: true },
+  { text: "x3", input: "cub", value: "**3", hide: true },
+  { text: "pie", input: "pie", value: "Math.PI", hide: true },
+  { text: "e", input: "e", value: "Math.E*", hide: true },
+  { text: "C", input: "C", value: "C", hide: false },
+  { text: "0", input: "0", value: "0", hide: false },
+  { text: ".", input: ".", value: ".", hide: false },
+  { text: "=", input: "=", value: "=", hide: false },
+];

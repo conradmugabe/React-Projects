@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --color-one: rgb(220, 54, 140);
+  --color-two: rgb(10, 101, 255);
+  --color-white: #fff;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+button {
+  border: none;
+}
+button:focus {
+  outline: none;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    45deg,
+    rgba(10, 101, 255, 1) 0%,
+    rgba(10, 101, 255, 0.6) 25%,
+    /* rgba(10, 101, 255, 0.2) 45%, */
+    /* rgba(220, 54, 140, 0.2) 55%, */
+    rgba(220, 54, 140, 0.6) 75%,
+    rgba(220, 54, 140, 1) 100%
+  );
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 1rem;
+  border: 2px solid #fff;
+  padding: 20px;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.input__container {
+  grid-column: 1/-1;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  color: #fff;
+}
+.input {
+  width: 100%;
+  font-size: 50px;
+  text-align: end;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+.ans {
+  text-align: end;
+  font-size: 60px;
+}
+
+.btn {
+  font-size: 21px;
+  border-radius: 10rem;
+  background-color: orange;
+  border: 2px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .app {
+    height: 100vh;
+  }
+  .container {
+    grid-template-columns: repeat(4, 70px);
+    grid-template-rows: 30vh repeat(5, 70px);
+    place-content: center;
+    gap: 2rem 2.5rem;
+  }
+  .input__container {
+    /* height: 30vh; */
+  }
+  .btn__hide {
+    display: none;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: 40vh repeat(5, 50px);
+  }
+}
