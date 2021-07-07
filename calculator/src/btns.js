@@ -40,7 +40,7 @@ export const btnRow4 = [
   { text: "1", input: "1", value: "1", hide: false },
   { text: "2", input: "2", value: "2", hide: false },
   { text: "3", input: "3", value: "3", hide: false },
-  { text: "4", input: "+", value: "+", hide: false },
+  { text: "+", input: "+", value: "+", hide: false },
 ];
 export const btnRow5 = [
   { text: "cot-1", input: "cot-1", value: 0, hide: true },
