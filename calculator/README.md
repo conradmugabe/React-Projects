@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn dev`
+
+Runs a desktop version of the app using electron in development mode.
+
 ### `yarn start`
 
 Runs the app in the development mode.\
