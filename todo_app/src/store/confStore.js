@@ -4,5 +4,5 @@ import api from "./apiMiddleware";
 
 export const store = configureStore({
   reducer: { todo: todoReducer },
-  middleware: (getDefaultMiddleware) => getDefaultMiddleware.concat(api),
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(api),
 });

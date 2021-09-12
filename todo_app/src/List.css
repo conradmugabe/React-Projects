@@ -4,3 +4,8 @@ button {
 .List {
   list-style-type: none;
 }
+
+.delete-btn {
+  background-color: red;
+  color: white;
+}

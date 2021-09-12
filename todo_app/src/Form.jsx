@@ -1,11 +1,15 @@
 import { useState } from "react";
-function Form({ addTodo }) {
+import { useDispatch } from "react-redux";
+import { addTodo } from "./store/todoReducer";
+
+function Form() {
   const [value, setValue] = useState("");
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (value.length > 0) {
-      addTodo(value);
+      dispatch(addTodo(value));
       setValue("");
     }
   };

@@ -14,12 +14,17 @@ const slice = createSlice({
       state.concat(action.payload);
     },
     todoRemoved: (state, action) => {
-      state = state.filter((todo) => todo.id === action.payload.id);
+      const { id } = action.payload;
+      state.forEach((todo, index) => {
+        if (todo.id === id) {
+          state.splice(index, 1);
+        }
+      });
     },
     todoCompleted: (state, action) => {
-      const { id, description, completed } = action.payload;
+      const { id, completed } = action.payload;
       state.map((todo) =>
-        todo.id !== id ? todo : { id, description, completed }
+        todo.id !== id ? todo : (todo.completed = completed)
       );
     },
   },
@@ -46,13 +51,15 @@ export const removeTodo = (id) =>
   apiCallBegan({
     url: "/todos",
     method: "delete",
+    data: { id },
     onSuccess: todoRemoved.type,
   });
 
-export const editTodo = (todo) =>
+export const editTodo = (id) =>
   apiCallBegan({
     url: "/todos",
     method: "patch",
+    data: { id },
     onSuccess: todoCompleted.type,
   });
 
