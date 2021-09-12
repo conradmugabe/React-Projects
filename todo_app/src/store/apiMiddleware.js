@@ -20,7 +20,7 @@ const api =
       });
       dispatch({ type: onSuccess, payload: response.data });
     } catch (error) {
-      dispatch({ type: onError, payload: error });
+      dispatch({ type: onError, payload: error.message });
     }
   };
 
